@@ -1,10 +1,43 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-}
-html,
-body,
-#root {
-  height: 100%;
-  background: #0e1129;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  background: #04070d;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100%;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #04070d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
